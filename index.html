@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shakeel J.</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/script.js"></script>
+
+		<!--Police d'écriture-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+		<!--Pour mettre une image sur la haut de la page (sur l'onglet)-->
+		<link rel="icon" type="image/png" href="images/shakeel.jpg" /><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"> 
+	</head>
+
+	<body data-spy="scroll" data-target=".navbar" data-offset="0">
+		<!--Barre de naviagtion-->
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="index.html">Shakeel</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="#profil"><i class="far fa-address-book"></i>Profil</a>
+		      </li>
+		      <!-- <li class="nav-item">
+		        <a class="nav-link" href="#réalisations"><i class="fab fa-buffer"></i>Réalisations</a>
+		      </li> -->
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          <i class="fab fa-buffer"></i>Réalisations
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		          <a class="dropdown-item" href="projects/projects-bachelor.html">Bachelor webdesign</a>
+		          <a class="dropdown-item" href="projects/projects-bts.html">BTS SIO</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#compétences"><i class="fas fa-chart-line"></i>Compétences</a>
+		      </li>
+		     <!-- <li class="nav-item">
+		        <a class="nav-link" href="#parcours-scolaire"><i class="fas fa-school"></i>Parcours scolaire</a>
+		      </li> -->
+		      <li class="nav-item">
+		        <a class="nav-link" href="#contact"><i class="fas fa-envelope-open-text"></i>Contact</a>
+		      </li>
+		  </div>
+		  <button id="btn-connect" type="button" class="btn btn-secondary" onclick="location.href=''">Connexion</button>
+		</nav>
+
+		
+		<!--Page d'accueil avec une présentation et un cv téléchargable-->
+		<section id="profil" class="container-fluid">
+			<div class="row">
+				<!-- <div class="col-md-6 profile-picture">
+					<img class="rounded-circle" src="images/shakeel.jpg" alt="Shakeel">
+					
+				</div> -->
+				<div class="col-12 heading">
+					<div class="presentation">
+						<h1>Jeerooburkhan Shakeel</h1>
+						<h3>Web designer</h3>
+						<p>
+							Actuellement, étudiant en troisième année de bachelor webdesign.
+						</p>
+					</div>
+					<div id="wrap">
+						<a href="docs/cv_shakeel.pdf" target="_blank" class="btn-slide2">
+							<span class="circle2"><i class="fa fa-download"></i></span>
+							<span class="title2">CV Shakeel</span>
+							<span class="title-hover2">Télécharger</span>
+						</a>
+					</div>
+					<!-- 
+					<a href="docs/cv_shakeel_comm.pdf" target="_blank" class="button1">Télécharger CV (350Ko )<span class="glyphicon glyphicon-download-alt"></span></a>
+					 -->
+				</div>
+			</div>
+		</section>
+		<!--Partie avec tous mes projets-->
+		
+		
+<section id="réalisations">
+		<div class="heading">
+			<h2>Réalisations</h2>
+			<div class="blue-divider"></div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<h3>Voici tous mes projets réalisés lors de mon Bachelor web design</h2>
+					<br>
+					<span class="btn-projects-home">
+						<a href="projects/projects-bachelor.html"></a>
+					</span>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<h3>Voici tous mes projets réalisés lors de mon BTS SIO option SLAM</h2>
+					<br>
+					<span class="btn-projects-home">
+						<a href="projects/projects-bts.html"></a>
+					</span>
+				</div>
+			</div>
+		</div>
+		</section>
+<!--Partie des compétences-->
+<section id="compétences"><div class="container">
+	<div class="heading">
+		<h2>Compétences</h2>
+		<div class="blue-divider"></div>
+	</div>
+	<ul class="timeline">
+		<li>
+			<div class="timeline-badge">
+				<span><img class="rounded-circle" src="images/figma.png"></span>
+			</div>
+			<div class="timeline-panel-container">
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h3>Figma</h3>
+						<h4></h4>
+						<p class="text-muted">
+							<small class="glyphicon glyphicon-time"></small>
+							Septembre 2022
+						</p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							Initiation au logiciel : Figma.
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="timeline-badge">
+				<span><img class="rounded-circle" src="images/illustrator.png"></span>
+			</div>
+			<div class="timeline-panel-container-inverted">
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h3>Illustrator</h3>
+						<h4></h4>
+						<p class="text-muted">
+							<small class="glyphicon glyphicon-time"></small>
+							Septembre 2022
+						</p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							Initiation au logiciel : Illustrator.
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="timeline-badge">
+				<span><img class="rounded-circle" src="images/adobexd.png"></span>
+			</div>
+			<div class="timeline-panel-container">
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h3>Adobe XD</h3>
+						<h4></h4>
+						<p class="text-muted">
+							<small class="glyphicon glyphicon-time"></small>
+							Janvier 2022
+						</p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							Initiation au logiciel : Adobe XD.
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="timeline-badge">
+				<span><i class="fab fa-symfony"></i></span>
+			</div>
+			<div class="timeline-panel-container-inverted">
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h3>Symfony</h3>
+						<h4></h4>
+						<p class="text-muted">
+							<small class="glyphicon glyphicon-time"></small>
+							Septembre 2021
+						</p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							Initiation au Symfony
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="timeline-badge">
+				<span><i class="fab fa-php"></i></span>
+			</div>
+			<div class="timeline-panel-container">
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h3>PHP</h3>
+						<h4></h4>
+						<p class="text-muted">
+							<small class="glyphicon glyphicon-time"></small>
+							Décembre 2020
+						</p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							Initiation au PHP
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="timeline-badge">
+				<span><i class="fas fa-database"></i></span>
+			</div>
+			<div class="timeline-panel-container-inverted">
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h3>MySQL</h3>
+						<h4></h4>
+						<p class="text-muted">
+							<small class="glyphicon glyphicon-time"></small>
+							 Octobre 2020
+						</p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							Initiation au langage SQL.
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="timeline-badge">
+				<span><i class="fab fa-python"></i></span>
+			</div>
+			<div class="timeline-panel-container">
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h3>PYTHON</h3>
+						<h4></h4>
+						<p class="text-muted">
+							<small class="glyphicon glyphicon-time"></small>
+							Octobre 2020
+						</p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							Initiation à Python
+						</p>
+					</div>
+				</div>
+			</div>
+		</li> 
+		<li>
+			<div class="timeline-badge">
+				<span><i class="fab fa-wordpress-simple"></i></span>
+			</div>
+			<div class="timeline-panel-container-inverted">
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h3>WORDPRESS</h3>
+						<p class="text-muted">
+							<small class="glyphicon glyphicon-time"></small>
+							 Octobre 2020
+						</p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							Initiation au CMS : Wordpress
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="timeline-badge">
+				<span><i class="fa-duotone fa-code"></i></span>
+			</div>
+			<div class="timeline-panel-container">
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h3>C#</h3>
+						<p class="text-muted">
+							<small class="glyphicon glyphicon-time"></small>
+							Septembre 2020 - Janvier 2021
+						</p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							Initaiation au C#
+							<br>
+							Programmation orientée objet (POO)
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="timeline-badge">
+				<span><i class="fab fa-bootstrap"></i></span>
+			</div>
+			<div class="timeline-panel-container-inverted">
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h3>Bootstrap et JQuery</h3>
+						<p class="text-muted">
+							<small class="glyphicon glyphicon-time"></small>
+							Novembre-Décembre 2020
+						</p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							Initiation à Bootstrap pour rendre nos pages web reponsive
+							<br>
+							Initiation à JQuery pour dynamiser nos pages web 
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="timeline-badge">
+				<span><i class="fab fa-html5"></i></span>
+			</div>
+			<div class="timeline-panel-container">
+				<div class="timeline-panel">
+					<div class="timeline-heading">
+						<h3>HTML/CSS</h3>
+						<p class="text-muted">
+							<small class="glyphicon glyphicon-time"></small>
+							Septembre 2020
+						</p>
+					</div>
+					<div class="timeline-body">
+						<p>
+							Initiation à HTML et à CSS pour le développement de nos pages web.
+						</p>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</section>
+
+</section>
+<!--Partie de conatct-->
+<section id="contact">
+	<div class="container">
+		<div class="heading">
+			<h2>Contact</h2>
+			<div class="blue-divider"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-offset-1 col-md-12">
+				<form id="contact-form" method="POST" action="index.php" role="form">
+					<div class="row">
+						<div class="col-md-6">
+							<label for="firstname">Prénom<span class="black"> *</span></label>
+							<input type="text" id="fisrtname" name="firstname" class="form-control" required placeholder="Votre prénom" value="">
+							<p class="comments"></p>
+						</div>
+						<div class="col-md-6">
+							<label for="name">Nom<span class="black"> *</span></label>
+							<input type="text" id="name" name="name" class="form-control" required placeholder="Votre nom" value="">
+							<p class="comments"></p>
+						</div>
+						<div class="col-md-6">
+							<label for="email">Email<span class="black">*</span></label>
+							<input type="email" id="email" name="email" class="form-control" required placeholder="Votre email" value="">
+							<p class="comments"></p>
+						</div>
+						<div class="col-md-6">
+							<label for="phone">Téléphone</label>
+							<input type="tel" id="phone" name="phone" class="form-control" required placeholder="Votre téléphone" value="">
+							<p class="comments"></p>
+						</div>
+						<div class="col-md-12">
+							<label for="message">Message<span class="black">*</span></label>
+							<textarea id="message" name="message" class="form-control" placeholder="Votre message" rows="4"></textarea>
+							<p class="comments"></p>
+						</div>
+						<div class="col-md-12">
+							<p class="white-contact">
+								<strong>* Ces informations sont requises</strong>
+							</p>
+						</div>
+						<div class="col-md-12">
+							<input type="submit" class="button-2" name="submit"value="Envoyer">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!--Bas de la page -->
+	<footer class="text-center">
+		<a href="#profil"><i class="fas fa-chevron-circle-up"></i></a>
+		<h5>
+			©Shakeel JEEROOBURKHAN | 2020 - 2022  | Site construit en HTML et CSS
+		</h5>
+		<a id="button-mailto" href="mailto:shakeel.jeerooburkhan995@gmail.com"><i class="far fa-envelope"></i></a>
+		<a href="tel:+33641570374"><i class="fas fa-phone"></i></a>
+		<a href="https://github.com/shakeeljeerooburkhan" target="_blank"><i class="fab fa-github"></i></a>
+	</footer>		
+</body>
+</html>
